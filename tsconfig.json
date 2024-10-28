@@ -1,0 +1,8 @@
+{
+	"compilerOptions": {
+		/* basic options */
+		"target": "ESNext", 
+		"module": "NodeNext"
+	},
+  "include": ["src/**/*"],
+}
