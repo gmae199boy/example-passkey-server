@@ -5,16 +5,21 @@
   "main": "server.mjs",
   "scripts": {
     "build": "pnpm clean && tsc --build",
-    "dev": "node --loader ts-node/esm src/app.mts"
+    "dev": "node --env-file=.env --loader ts-node/esm src/app.mts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@simplewebauthn/server": "^11.0.0",
+    "@simplewebauthn/types": "^11.0.0",
+    "connect-redis": "^7.1.1",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "express-session": "^1.18.1"
+    "express-session": "^1.18.1",
+    "mysql2": "^3.11.3",
+    "redis": "^4.7.0",
+    "typeorm": "^0.3.20"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",

@@ -1,8 +1,15 @@
 {
 	"compilerOptions": {
-		/* basic options */
-		"target": "ESNext", 
-		"module": "NodeNext"
-	},
-  "include": ["src/**/*"],
+    "outDir": "dist/",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false
+  },
+  "include": [
+    "src/**/*.mts"
+  ],
+  "ts-node": { "esm": true }
 }
